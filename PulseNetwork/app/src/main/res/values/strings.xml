@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pulse</string>
+
+    <!-- 底部导航 -->
+    <string name="nav_chat">对话</string>
+    <string name="nav_workflows">工作流</string>
+    <string name="nav_network">网络</string>
+    <string name="nav_settings">设置</string>
+
+    <!-- 聊天界面 -->
+    <string name="chat_input_hint">输入消息…</string>
+    <string name="chat_voice_hint">按住说话</string>
+    <string name="chat_empty_title">开始对话</string>
+    <string name="chat_empty_subtitle">我是你的本地 AI 助手，完全离线运行</string>
+
+    <!-- 网络状态 -->
+    <string name="network_status_offline">离线模式</string>
+    <string name="network_status_local">局域网</string>
+    <string name="network_status_online">已连接</string>
+    <string name="network_peers">发现 %d 个节点</string>
+
+    <!-- 设置 -->
+    <string name="settings_model">模型设置</string>
+    <string name="settings_model_not_loaded">未加载模型</string>
+    <string name="settings_model_loaded">已加载: %s</string>
+    <string name="settings_governor">总督设置</string>
+    <string name="settings_governor_enabled">启用网络任务</string>
+    <string name="settings_privacy">隐私设置</string>
+    <string name="settings_about">关于</string>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.PulseNetwork" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="android:statusBarColor">@color/primary_dark</item>
+        <item name="android:navigationBarColor">@color/surface</item>
+    </style>
+
+    <style name="Theme.PulseNetwork.Splash" parent="Theme.PulseNetwork">
+        <item name="android:windowBackground">@color/primary</item>
+    </style>
+
+    <!-- 文字样式 -->
+    <style name="TextAppearance.Pulse.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@color/on_background</item>
+    </style>
+
+    <style name="TextAppearance.Pulse.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/on_background</item>
+    </style>
+
+    <style name="TextAppearance.Pulse.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+
+    <style name="TextAppearance.Pulse.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <!-- 按钮样式 -->
+    <style name="Widget.Pulse.Button.Primary" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/primary</item>
+        <item name="android:textColor">@color/on_primary</item>
+    </style>
+
+    <!-- 卡片样式 -->
+    <style name="Widget.Pulse.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">2dp</item>
+    </style>
+
+    <!-- 聊天气泡样式 -->
+    <style name="ChatBubble.User">
+        <item name="android:background">@drawable/bg_bubble_user</item>
+    </style>
+
+    <style name="ChatBubble.AI">
+        <item name="android:background">@drawable/bg_bubble_ai</item>
+    </style>
+</resources>

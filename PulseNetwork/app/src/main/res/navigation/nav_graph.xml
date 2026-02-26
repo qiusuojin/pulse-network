@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_chat">
+
+    <fragment
+        android:id="@+id/nav_chat"
+        android:name="com.pulsenetwork.app.ui.chat.ChatFragment"
+        android:label="@string/nav_chat"/>
+
+    <fragment
+        android:id="@+id/nav_workflows"
+        android:name="com.pulsenetwork.app.ui.workflow.WorkflowListFragment"
+        android:label="@string/nav_workflows"/>
+
+    <fragment
+        android:id="@+id/nav_network"
+        android:name="com.pulsenetwork.app.ui.network.NetworkFragment"
+        android:label="@string/nav_network"/>
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.pulsenetwork.app.ui.settings.SettingsFragment"
+        android:label="@string/nav_settings"/>
+
+</navigation>
