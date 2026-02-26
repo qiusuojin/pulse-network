@@ -17,6 +17,6 @@ If you've also been troubled by the same questions, or think this direction is a
 
 (The white paper is in the repository, the code has just been started, and any feedback is welcome.)
 
-Of course, I am still very hopeful. I firmly believe that the future of our country will definitely be good. After all, our computing power foundation is owned by the state, our AI is also the cheapest, and our Party is always above everything else. I believe the future is actually a super-linguistic reality, so I firmly believe that our future will be even better.
+Of course, I am still very hopeful. I firmly believe that the future of our country will definitely be good. After all, our computing power foundation is owned by the state, our AI is also the cheapest, and our Party is always above everything else. I believe the future is actually a super-linguistic reality, so I firmly believe that our future will be even better.But I don't believe American .
 
 This is just a little idea from an individual. If you have any valuable insights, please feel free to join in. Thank you.
