@@ -5,10 +5,16 @@ import android.net.wifi.WifiManager
 import android.os.BatteryManager
 import android.os.PowerManager
 import android.view.WindowManager
+import com.pulsenetwork.data.evolution.NodeEvolutionImpl
 import com.pulsenetwork.data.governor.GovernorServiceImpl
+import com.pulsenetwork.data.prediction.PredictionEngineImpl
+import com.pulsenetwork.data.relation.RelationNetworkImpl
 import com.pulsenetwork.data.swarm.SwarmNetworkImpl
 import com.pulsenetwork.data.workflow.WorkflowInterviewerImpl
+import com.pulsenetwork.domain.evolution.NodeEvolution
 import com.pulsenetwork.domain.governor.Governor
+import com.pulsenetwork.domain.prediction.PredictionEngine
+import com.pulsenetwork.domain.relation.RelationNetwork
 import com.pulsenetwork.domain.swarm.SwarmNetwork
 import com.pulsenetwork.domain.workflow.WorkflowInterviewer
 import dagger.Module
@@ -81,5 +87,37 @@ object DataModule {
         @ApplicationContext context: Context
     ): WifiManager {
         return context.getSystemService(Context.WIFI_SERVICE) as WifiManager
+    }
+
+    // ========== v0.2 新增模块 ==========
+
+    /**
+     * 提供关系网络层
+     * 基于赫布学习的节点关系管理
+     */
+    @Provides
+    @Singleton
+    fun provideRelationNetwork(): RelationNetwork {
+        return RelationNetworkImpl()
+    }
+
+    /**
+     * 提供预测引擎层
+     * 基于预测编码的智能预测系统
+     */
+    @Provides
+    @Singleton
+    fun providePredictionEngine(): PredictionEngine {
+        return PredictionEngineImpl()
+    }
+
+    /**
+     * 提供节点进化系统
+     * 基于免疫记忆的节点成长系统
+     */
+    @Provides
+    @Singleton
+    fun provideNodeEvolution(): NodeEvolution {
+        return NodeEvolutionImpl()
     }
 }
