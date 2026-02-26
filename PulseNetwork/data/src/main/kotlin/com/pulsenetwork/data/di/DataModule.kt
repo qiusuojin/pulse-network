@@ -10,12 +10,14 @@ import com.pulsenetwork.data.governor.GovernorServiceImpl
 import com.pulsenetwork.data.prediction.PredictionEngineImpl
 import com.pulsenetwork.data.relation.RelationNetworkImpl
 import com.pulsenetwork.data.swarm.SwarmNetworkImpl
+import com.pulsenetwork.data.workflow.WorkflowExecutorImpl
 import com.pulsenetwork.data.workflow.WorkflowInterviewerImpl
 import com.pulsenetwork.domain.evolution.NodeEvolution
 import com.pulsenetwork.domain.governor.Governor
 import com.pulsenetwork.domain.prediction.PredictionEngine
 import com.pulsenetwork.domain.relation.RelationNetwork
 import com.pulsenetwork.domain.swarm.SwarmNetwork
+import com.pulsenetwork.domain.workflow.WorkflowExecutor
 import com.pulsenetwork.domain.workflow.WorkflowInterviewer
 import dagger.Module
 import dagger.Provides
@@ -119,5 +121,19 @@ object DataModule {
     @Singleton
     fun provideNodeEvolution(): NodeEvolution {
         return NodeEvolutionImpl()
+    }
+
+    // ========== v0.3 新增模块 ==========
+
+    /**
+     * 提供工作流执行引擎
+     * 支持分布式工作流执行
+     */
+    @Provides
+    @Singleton
+    fun provideWorkflowExecutor(
+        swarmNetwork: SwarmNetwork
+    ): WorkflowExecutor {
+        return WorkflowExecutorImpl(swarmNetwork)
     }
 }

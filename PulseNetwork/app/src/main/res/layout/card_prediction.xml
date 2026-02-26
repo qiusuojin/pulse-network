@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 预测引擎卡片 -->
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 标题行 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🔮 预测引擎"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/phaseText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="平衡"
+                android:textSize="12sp"
+                android:background="@drawable/bg_tag"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"/>
+
+        </LinearLayout>
+
+        <!-- 统计数据 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/accuracyText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50%"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="预测准确率"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/darker_gray"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/explorationRatio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20%"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="探索比例"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/darker_gray"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 预测需求 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="预测需求:"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/predictionsList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="暂无预测"
+            android:textSize="12sp"
+            android:textColor="@android:color/darker_gray"
+            android:lineSpacingExtra="4dp"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
