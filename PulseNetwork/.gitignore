@@ -1,0 +1,33 @@
+# ==================== Android ====================
+*.iml
+.gradle
+/local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+*.apk
+*.aab
+
+# ==================== NDK/Native ====================
+*.so
+*.a
+*.dll
+*.dylib
+core/native/src/main/cpp/llama.cpp/
+core/native/src/main/cpp/whisper.cpp/
+
+# ==================== Secrets ====================
+*.env
+*.env.*
+secrets/
+*.jks
+*.keystore
+credentials/
+
+# ==================== Generated ====================
+*.g.dart
+*.freezed.dart
+*.mocks.dart
